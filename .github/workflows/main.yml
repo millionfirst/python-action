@@ -9,7 +9,6 @@ jobs:
     - uses: actions/setup-node@v2-beta
       with:
         node-version: '12'
-    steps:
     - name: Hello world action step
       id: hello
       uses: unknownuser-py/python-action@v1
