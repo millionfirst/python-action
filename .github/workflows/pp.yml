@@ -16,6 +16,12 @@ jobs:
     - name: Install dependencies
       run: |
         python main.py
-    - name: Analysing the code with pylint
+    - name: ls result
       run: |
         ls
+    - name: Commit
+      uses: EndBug/add-and-commit@v5
+      with:
+        add: "*"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
